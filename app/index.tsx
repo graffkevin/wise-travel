@@ -1,4 +1,4 @@
-import {  View } from "react-native";
+import { View } from "react-native";
 import NewTravelForm from "@/features/NewTravelForm";
 
 export default function Index() {

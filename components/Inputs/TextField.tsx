@@ -11,14 +11,14 @@ interface TextFieldProps {
     leftIcon?: IconNode;
 }
 
-const TextField = ({ label, placeholder, value, onChange, leftIcon }:TextFieldProps) => {
-    const handleChange = (e: NativeSyntheticEvent<TextInputChangeEventData>) => {
-        if (onChange) {
-            onChange(e.nativeEvent.text);
-        }
-    };
+const TextField = ({ label, placeholder, value, onChange, leftIcon }: TextFieldProps) => {
+  const handleChange = (e: NativeSyntheticEvent<TextInputChangeEventData>) => {
+    if (onChange) {
+      onChange(e.nativeEvent.text);
+    }
+  };
 
-    return <Input label={label} placeholder={placeholder} value={value} onChange={handleChange} leftIcon={leftIcon} />;
+  return <Input label={label} placeholder={placeholder} value={value} onChange={handleChange} leftIcon={leftIcon}/>;
 };
 
 export default TextField;

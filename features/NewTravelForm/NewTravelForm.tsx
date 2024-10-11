@@ -1,20 +1,16 @@
-import React from 'react';
-import { View, Text } from 'react-native';
-import { Header } from 'react-native-elements';
-import TextField from "@/components/Inputs/TextField";
+import { Box } from "@/components/ui/box";
+import { VStack } from "@/components/ui/vstack";
+import { Text } from "@/components/ui/text";
 
 const NewTravelForm = () => {
-    return (
-        <View style={{ flex: 1 }}>
-            <Header
-                centerComponent={{ text: 'New Travel Form', style: { color: '#fff', fontSize: 18 } }}
-            />
-            <View style={{ marginTop: 20, padding: 20 }}>
-                <Text>Hello world! a</Text>
-                <TextField placeholder="coucou" />
-            </View>
-        </View>
-    );
+  return (
+    <VStack space="lg" style={{ alignItems: "center" }}>
+      <Box style={{ height: 80, width: 80, backgroundColor: "#E53E3E" }} />
+      <Box style={{ height: 80, width: 80, backgroundColor: "#613737" }} />
+      <Box style={{ height: 80, width: 80, backgroundColor: "#b8b2b2" }} />
+      <Text className="text-center">New Travel Form</Text>
+    </VStack>
+  );
 };
 
 export default NewTravelForm;

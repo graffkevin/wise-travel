@@ -1,7 +1,9 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { Text } from "react-native";
 import Stack from "@/components/Layouts/Stack";
+import { Text, View } from "react-native";
+import Card from "@/components/Layouts/Card";
+import Typography from "@/components/DataDisplay/Typography";
 
 interface Recipe {
   recipe_name: string;
@@ -39,6 +41,12 @@ const NewTravelForm = () => {
     <Stack direction="column" spacing={10}>
       <Text>Item 1</Text>
       <Text>Item 2</Text>
+      <Card>
+        <View style={{ marginBottom: 10 }}>
+          <Typography variant="h2">{"subtitle"}</Typography>
+          <Typography>{"content"}</Typography>
+        </View>
+      </Card>
       {/*<Button title="Click Me" />*/}
     </Stack>
   );

@@ -4,6 +4,7 @@ import { Children, ReactNode } from "react";
 interface StackProps {
   direction?: "row" | "column";
   spacing?: number;
+  margin?: number;
   style?: object;
   children: ReactNode;
 }

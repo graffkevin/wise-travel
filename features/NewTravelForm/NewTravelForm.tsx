@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import Stack from "@/components/Layouts/Stack";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import Card from "@/components/Layouts/Card";
 import Typography from "@/components/DataDisplay/Typography";
 
@@ -30,24 +30,15 @@ const NewTravelForm = () => {
   }, []);
 
   return (
-    // <VStack space="lg" style={{ alignItems: "center" }}>
-    //   {data.map((recipe) => (
-    //     <HStack key={recipe.recipe_name} space="lg">
-    //       <Box style={{ height: 80, width: 80, backgroundColor: "#b8b2b2" }} />
-    //       <Text>{recipe.recipe_name}</Text>
-    //     </HStack>
-    //   ))}
-    // </VStack>
-    <Stack direction="column" spacing={10}>
-      <Text>Item 1</Text>
-      <Text>Item 2</Text>
+    <Stack direction="column" spacing={10} style={{ paddingTop: 30 }}>
+      <Typography>Item 1</Typography>
+      <Typography>Item 2</Typography>
       <Card>
         <View style={{ marginBottom: 10 }}>
           <Typography variant="h2">{"subtitle"}</Typography>
           <Typography>{"content"}</Typography>
         </View>
       </Card>
-      {/*<Button title="Click Me" />*/}
     </Stack>
   );
 };
